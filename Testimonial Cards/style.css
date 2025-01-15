@@ -76,3 +76,13 @@ body {
 .rating i:hover ~ i {
     color: lightgray;
 }
+
+.rating span {
+    font-size: 20px;
+    color: gold;
+}
+
+rating span:hover,
+.rating span:hover ~ span {
+    color: lightgray;
+}

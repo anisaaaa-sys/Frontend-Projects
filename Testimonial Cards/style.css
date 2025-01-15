@@ -60,3 +60,19 @@ body {
     transform: scale(1.05);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
+
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.rating i {
+    font-size: 20px;
+    color: gold;
+}
+
+.rating i:hover,
+.rating i:hover ~ i {
+    color: lightgray;
+}

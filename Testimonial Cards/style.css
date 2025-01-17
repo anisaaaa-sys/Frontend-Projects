@@ -8,55 +8,50 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.container {
+.container1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.testimonial-card {
+.testimonial-card1 {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     max-width: 300px;
-    margin: 10px auto;
+
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.testimonial-card img {
+.testimonial-card1 img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     margin: 10px;
 }
 
-.testimonial-card h3 {
+.testimonial-card1 h3 {
     font-size: 18px;
     margin: 5px 0;
 }
 
-.testimonial-card .job-title {
+.testimonial-card1 .job-title {
     color: #666;
     font-size: 14px;
     margin: 15px;
 }
 
-.testimonial-card .testimonial-text {
+.testimonial-card1 .testimonial-text {
     font-size: 16px;
     line-height: 1.5;
 }
 
-@media (max-width: 600px) {
-    .testimonial-card {
-        max-width: 100%;
-    }
-}
-
-.testimonial-card:hover {
+.testimonial-card1:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
@@ -85,4 +80,77 @@ body {
 rating span:hover,
 .rating span:hover ~ span {
     color: lightgray;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-card2 {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card2 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.testimonial-card2 h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.testimonial-card2 .job-title {
+    color: #666;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.testimonial-card2 .testimonial-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.testimonial-card2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.name-title {
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Legger navn og jobbtittel under hverandre */
+}
+  
+.name-title h3 {
+    margin: 0;
+    font-size: 18px;
+}
+  
+.name-title .job-title {
+    margin: 0;
+    color: #666; /* Gråfarge for jobbtittelen */
+    font-size: 14px;
+}
+  
+@media (max-width: 600px) {
+    .testimonial-card1 {
+        max-width: 100%;
+    }
 }
